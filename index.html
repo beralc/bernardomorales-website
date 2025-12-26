@@ -569,7 +569,9 @@
             <!-- Contact Form -->
             <div class="mt-20 bg-white p-10 rounded-3xl shadow-xl border-2 border-gray-200" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="text-3xl font-black text-dark-bg mb-8">Or Send a Quick Message</h3>
-                <form action="https://formspree.io/f/xykyzdza" method="POST" class="space-y-6">
+
+                <!-- Form -->
+                <form id="contact-form" action="https://formspree.io/f/xykyzdza" method="POST" class="space-y-6">
                     <input type="text" name="name" placeholder="Your Name" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required>
                     <input type="email" name="email" placeholder="Your Email Address" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required>
                     <input type="text" name="organization" placeholder="Your Organization/Institution" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium">
@@ -585,6 +587,18 @@
                         Request Consultation →
                     </button>
                 </form>
+
+                <!-- Thank You Message (hidden by default) -->
+                <div id="thank-you-message" class="hidden text-center py-12">
+                    <div class="mb-6">
+                        <i data-lucide="check-circle" class="w-20 h-20 text-green-500 mx-auto"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-dark-bg mb-4">Thank You!</h3>
+                    <p class="text-xl text-gray-700 mb-6">Your message has been sent successfully. I'll get back to you within 24-48 hours.</p>
+                    <button onclick="resetForm()" class="px-8 py-3 bg-primary text-white rounded-xl font-bold hover:shadow-lg transition duration-300">
+                        Send Another Message
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -749,6 +763,46 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+
+        // Handle contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const thankYouMessage = document.getElementById('thank-you-message');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch('https://formspree.io/f/xykyzdza', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Hide form and show thank you message
+                    contactForm.classList.add('hidden');
+                    thankYouMessage.classList.remove('hidden');
+
+                    // Reinitialize Lucide icons for the checkmark
+                    lucide.createIcons();
+                } else {
+                    alert('There was a problem sending your message. Please try again or email me directly at info@bernardomorales.com');
+                }
+            } catch (error) {
+                alert('There was a problem sending your message. Please try again or email me directly at info@bernardomorales.com');
+            }
+        });
+
+        // Reset form function
+        function resetForm() {
+            contactForm.reset();
+            contactForm.classList.remove('hidden');
+            thankYouMessage.classList.add('hidden');
+        }
 
         // Load books when page is ready
         document.addEventListener('DOMContentLoaded', loadBooks);

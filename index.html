@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardo Morales | ELT Teacher Training, Cambridge Exam Prep, Publishing & AI EdTech Solutions Spain</title>
+    <meta name="description" content="PhD Candidate & DELTA Publishing author offering teacher training, ELT publishing services, and AI EdTech solutions. Cambridge exam prep workshops, CEFR curriculum design, graded readers, and Google Workspace integration for language schools and universities in Spain.">
+    <meta name="keywords" content="teacher training Spain, ELT publishing, Cambridge exam preparation, CEFR curriculum, bilingual education, AI EdTech, Google for Education, graded readers, language school training, educational consulting">
+    <meta name="author" content="Bernardo Morales">
+    <link rel="canonical" href="https://www.bernardomorales.com">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bernardomorales.com">
+    <meta property="og:title" content="Bernardo Morales | Teacher Training & ELT Publishing Expert">
+    <meta property="og:description" content="Cambridge-certified teacher trainer, DELTA Publishing author, and AI EdTech specialist. 10+ years developing educational solutions for language schools worldwide.">
+    <meta property="og:image" content="https://www.bernardomorales.com/assets/images/image_Bernardo.jpg">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1E40AF', // Deep Navy Blue
+                        'secondary': '#F59E0B', // Rich Gold/Amber
+                        'accent': '#FBBF24', // Bright Gold
+                        'dark-bg': '#0F172A', // Very Dark Navy
+                        'light-bg': '#F8FAFC', // Off White
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        glow: {
+                            '0%': { 'box-shadow': '0 0 20px rgba(245, 158, 11, 0.5)' },
+                            '100%': { 'box-shadow': '0 0 40px rgba(245, 158, 11, 0.8), 0 0 60px rgba(30, 64, 175, 0.5)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Solid Navy Background */
+        .solid-navy-bg {
+            background: #0F172A;
+        }
+
+        /* Gold Text Color */
+        .gold-text {
+            color: #F59E0B;
+        }
+
+        /* Glassmorphism effect for cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Hover lift effect */
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(29, 78, 216, 0.5);
+        }
+
+        /* Icon animation on hover */
+        .icon-bounce:hover {
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-5px); }
+        }
+
+        /* Button pulse effect */
+        .btn-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .8; }
+        }
+
+        /* Gradient border animation */
+        .gradient-border {
+            position: relative;
+            background: white;
+            border-radius: 1rem;
+            padding: 2px;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 1rem;
+            padding: 3px;
+            background: linear-gradient(45deg, #1E40AF, #F59E0B, #FBBF24);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        /* Smooth fade for service icons */
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <!-- Navigation Header with Backdrop Blur -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl sm:text-3xl font-black text-dark-bg tracking-tight">
+                Bernardo Morales<span class="text-secondary">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8 font-semibold text-lg">
+                <a href="#services" class="hover:text-primary transition duration-300 hover:scale-110 inline-block">Services</a>
+                <a href="#about" class="hover:text-primary transition duration-300 hover:scale-110 inline-block">About</a>
+                <a href="#publications" class="hover:text-primary transition duration-300 hover:scale-110 inline-block">Publications</a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="#contact" class="hidden md:block px-6 py-3 bg-primary text-white rounded-full text-sm font-bold hover:shadow-xl hover:scale-105 transition duration-300 shadow-md">
+                Free Consultation
+            </a>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 text-dark-bg hover:text-primary transition-colors">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-4">
+                <a href="#services" class="block text-lg font-semibold text-dark-bg hover:text-primary transition-colors py-2">Services</a>
+                <a href="#about" class="block text-lg font-semibold text-dark-bg hover:text-primary transition-colors py-2">About</a>
+                <a href="#publications" class="block text-lg font-semibold text-dark-bg hover:text-primary transition-colors py-2">Publications</a>
+                <a href="#contact" class="block w-full px-6 py-3 bg-primary text-white rounded-full text-center font-bold hover:shadow-xl transition duration-300">
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION with Solid Navy Background -->
+    <section id="hero" class="bg-dark-bg text-white py-16 sm:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <!-- Left: Text Content -->
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
+                    PhD Researcher · EdTech Project Manager · ELT Author
+                </div>
+                <h1 class="text-5xl sm:text-7xl font-black leading-tight mb-6">
+                    Teacher training, educational publishing, and <span class="text-amber-400">EdTech</span> solutions.
+                </h1>
+                <p class="text-2xl text-blue-50 mb-10 max-w-lg leading-relaxed">
+                    Teacher trainer, published author, and EdTech project manager with over 10 years of experience designing educational solutions used by schools, publishers, and institutions.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#services" class="px-10 py-5 border-2 border-white text-white rounded-2xl text-xl font-bold hover:bg-white hover:text-dark-bg transition duration-300 flex items-center justify-center">
+                        View Services
+                    </a>
+                    <a href="#contact" class="group px-10 py-5 bg-secondary text-white rounded-2xl text-xl font-bold shadow-lg transform hover:scale-105 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>Free Consultation</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Professional Photo -->
+            <div class="hidden md:flex justify-center items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="assets/images/image_Bernardo.jpg" alt="Bernardo - Digital Communication Expert" class="w-[420px] h-[500px] rounded-3xl shadow-xl border-4 border-secondary object-cover transform hover:scale-105 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION with Hover Lift Effects -->
+    <section id="services" class="py-24 sm:py-32 bg-gray-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl sm:text-6xl font-black text-dark-bg mb-6">
+                    Services
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Service 1: Teacher Training -->
+                <div class="service-card glass-card p-8 rounded-3xl shadow-xl hover-lift cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary mb-6 service-icon">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-dark-bg mb-4">Teacher Training & Professional Development (ELT)</h3>
+                    <p class="text-gray-600 mb-4 text-base">Teacher training and consultancy for English language institutions.</p>
+                    <ul class="text-gray-700 mb-6 text-base leading-relaxed space-y-2 list-disc list-inside">
+                        <li>CEFR curriculum alignment and course design</li>
+                        <li>Cambridge exam preparation training (YLE to CPE)</li>
+                        <li>Bilingual education programme design</li>
+                        <li>Eaquals & International House quality assurance inspections</li>
+                        <li>Custom CPD programmes for schools, universities, and language centres</li>
+                    </ul>
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="text-sm font-bold text-primary">
+                            Ideal for: Language schools · Universities · Bilingual centres · Teacher training providers
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Editorial & Publishing -->
+                <div class="service-card glass-card p-8 rounded-3xl shadow-xl hover-lift cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary mb-6 service-icon">
+                        <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-dark-bg mb-4">ELT Publishing & Educational Content Development</h3>
+                    <p class="text-gray-600 mb-4 text-base">Published ELT author with over 7 years of experience working with international publishers.</p>
+                    <ul class="text-gray-700 mb-6 text-base leading-relaxed space-y-2 list-disc list-inside">
+                        <li>Cambridge exam preparation coursebooks (A2 Key, B1 Preliminary for Schools)</li>
+                        <li>Graded readers with comprehension activities</li>
+                        <li>ELT textbook writing and editorial development</li>
+                        <li>CEFR-aligned curriculum materials</li>
+                        <li>Educational content development for digital platforms</li>
+                    </ul>
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="text-sm font-bold text-primary">
+                            Ideal for: ELT publishers · EdTech platforms · Educational content agencies
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3: EdTech & AI Integration -->
+                <div class="service-card glass-card p-8 rounded-3xl shadow-xl hover-lift cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-secondary mb-6 service-icon">
+                        <i data-lucide="bot" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-dark-bg mb-4">AI EdTech Solutions & Google Workspace Integration</h3>
+                    <p class="text-gray-600 mb-4 text-base">AI-powered learning solutions designed with a strong foundation in second language acquisition (SLA) research.</p>
+                    <ul class="text-gray-700 mb-6 text-base leading-relaxed space-y-2 list-disc list-inside">
+                        <li>Design and development of adaptive language learning tools</li>
+                        <li>AI teaching assistants for language learning (including senior learners)</li>
+                        <li>Google Workspace for Education integration</li>
+                        <li>Product management for EdTech platforms (from concept to classroom)</li>
+                        <li>UX-informed educational product design</li>
+                    </ul>
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="text-sm font-bold text-primary mb-3">
+                            Ideal for: EdTech companies · Schools · Universities · Educational publishers
+                        </p>
+                        <a href="https://bernardo-s-teaching-assistant.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-secondary hover:text-primary transition-colors flex items-center gap-1">
+                            View AI Teaching Assistant Project <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="inline-block px-12 py-5 bg-primary text-white rounded-2xl text-xl font-black hover:shadow-xl hover:scale-105 transition duration-300 shadow-lg">
+                    Get a Free Consultation →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="py-24 sm:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-16 items-start">
+
+            <!-- Left Column -->
+            <div class="md:col-span-2" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-5xl sm:text-6xl font-black text-dark-bg mb-6 leading-tight">
+                    Why Work <span class="text-secondary">With Me</span>?
+                </h2>
+                <p class="text-2xl text-gray-600 mb-8 font-semibold">
+                    10+ years building educational solutions — not just talking about them.
+                </p>
+                <ul class="space-y-4 text-xl text-gray-700 leading-relaxed">
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>EdTech Project Manager leading real digital platforms used in schools</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>Published author of 20+ ELT books used worldwide</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>PhD researcher specialising in AI and language learning</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>University professor in bilingual education and school management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>Cambridge Speaking Examiner Team Leader</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>International inspector for Eaquals and International House</span>
+                    </li>
+                </ul>
+                <p class="text-xl text-gray-700 leading-relaxed mt-8">
+                    Whether you need teacher training, publishing expertise, or AI-driven EdTech development, I deliver solutions grounded in research and validated in real educational contexts.
+                </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="bg-gray-50 p-8 rounded-xl border-2 border-primary shadow-lg">
+                    <h3 class="text-3xl font-black text-primary mb-6">Credentials</h3>
+                    <ul class="space-y-4 text-gray-800">
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <div>
+                                <span class="font-semibold">PhD Candidate, English Linguistics</span>
+                                <span class="block text-sm text-gray-600">Universidad Complutense de Madrid</span>
+                                <span class="block text-sm text-gray-500 italic">Research focus: AI-powered language learning for senior learners</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <div>
+                                <span class="font-semibold">MA in Applied Linguistics & TESOL</span>
+                                <span class="block text-sm text-gray-600">University of Leicester</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">EdTech Project Manager — Edelvives</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">ELT Author — DELTA Publishing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">University Professor — VIU · UNIR · Universidad Nebrija · Universidad de Alcalá</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">Eaquals & International House World Inspector</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">DELTA & CELTA Certified — University of Cambridge</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">Google for Education Certified Trainer</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                            <span class="font-semibold">Gemini Certified Educator</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PUBLICATIONS SECTION -->
+    <section id="publications" class="py-24 sm:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl sm:text-6xl font-black text-dark-bg mb-6">
+                    Published <span class="text-secondary">Works</span>
+                </h2>
+                <p class="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    From exam preparation materials to graded readers — helping learners worldwide.
+                </p>
+            </div>
+
+            <!-- Exam Preparation Books -->
+            <div class="mb-20" data-aos="fade-up">
+                <h3 class="text-4xl font-black text-dark-bg mb-6 text-center">
+                    Exam Preparation
+                </h3>
+                <div id="exam-books-container" class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <!-- Exam prep books will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Graded Readers -->
+            <div data-aos="fade-up">
+                <h3 class="text-4xl font-black text-dark-bg mb-4 text-center">
+                    Graded Readers <span class="text-sm font-normal text-gray-600">(Selected Titles)</span>
+                </h3>
+                <p class="text-center text-gray-600 mb-10 italic">(All titles include pedagogically designed comprehension activities.)</p>
+                <div id="readers-container" class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Graded readers will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROFESSIONAL CERTIFICATIONS -->
+    <section class="bg-white py-16" data-aos="fade-up" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-2xl font-bold text-gray-600 mb-12 tracking-wide">PROFESSIONAL CERTIFICATIONS</h2>
+
+            <!-- Google Certification Badges -->
+            <div class="flex flex-wrap justify-center items-center gap-12 mb-16">
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="assets/images/google-certified-trainer.png" alt="Google for Education Certified Trainer" class="h-40 w-auto hover:opacity-90 transition-opacity duration-300 shadow-lg rounded-lg">
+                    <span class="text-sm font-bold text-gray-700 mt-3">Google Certified Trainer</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/images/google-certified-educator.png" alt="Gemini Certified Educator" class="h-40 w-auto hover:opacity-90 transition-opacity duration-300 shadow-lg rounded-lg">
+                    <span class="text-sm font-bold text-gray-700 mt-3">Gemini Certified Educator</span>
+                </div>
+            </div>
+
+            <!-- Other Credentials -->
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="150">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="graduation-cap" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">PhD Candidate</span>
+                    <span class="text-xs text-gray-500">UCM</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="book-open" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">MA Applied Linguistics</span>
+                    <span class="text-xs text-gray-500">University of Leicester</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="250">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="award" class="w-7 h-7 text-secondary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">DELTA Certified</span>
+                    <span class="text-xs text-gray-500">Cambridge</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="check-circle" class="w-7 h-7 text-secondary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">CELTA Certified</span>
+                    <span class="text-xs text-gray-500">Cambridge</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="350">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">Eaquals Inspector</span>
+                    <span class="text-xs text-gray-500">International</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                        <i data-lucide="globe" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">IH World Inspector</span>
+                    <span class="text-xs text-gray-500">International House</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION with Bold CTA -->
+    <section id="contact" class="py-24 sm:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-5xl sm:text-7xl font-black text-dark-bg mb-6 leading-tight">
+                    Ready to Work <span class="text-secondary">Together</span>?
+                </h2>
+                <p class="text-2xl text-gray-700 mb-6 leading-relaxed">
+                    Book a <strong>free 30-minute consultation</strong> to discuss your teacher training needs, publishing project, or AI EdTech development.
+                </p>
+                <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+                    Whether you're:
+                </p>
+                <ul class="text-xl text-gray-700 mb-12 space-y-3 max-w-3xl mx-auto text-left">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>a language school seeking Cambridge-aligned training</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>a publisher developing ELT materials</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1"></i>
+                        <span>an institution building a digital learning platform</span>
+                    </li>
+                </ul>
+                <p class="text-2xl text-gray-700 mb-12 font-semibold">
+                    Let's talk about solutions that deliver measurable results.
+                </p>
+
+                <a href="mailto:info@bernardomorales.com" class="inline-block px-14 py-6 bg-secondary text-white rounded-2xl text-2xl font-black hover:shadow-xl hover:scale-105 transition duration-300 shadow-lg mb-8">
+                    Schedule Free Consultation →
+                </a>
+
+                <div class="mt-8 text-center">
+                    <p class="text-lg text-gray-600 mb-2">Or contact me directly:</p>
+                    <p class="text-xl">
+                        <a href="mailto:info@bernardomorales.com" class="text-primary hover:text-secondary font-semibold transition-colors">📧 info@bernardomorales.com</a>
+                    </p>
+                    <p class="text-xl mt-2">
+                        <a href="https://www.linkedin.com/in/bernardomorales/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary font-semibold transition-colors">🔗 LinkedIn: linkedin.com/in/bernardomorales</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="mt-20 bg-white p-10 rounded-3xl shadow-xl border-2 border-gray-200" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-3xl font-black text-dark-bg mb-8">Or Send a Quick Message</h3>
+                <form action="https://formspree.io/f/xykyzdza" method="POST" class="space-y-6">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required>
+                    <input type="email" name="email" placeholder="Your Email Address" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required>
+                    <input type="text" name="organization" placeholder="Your Organization/Institution" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium">
+                    <select name="service" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required>
+                        <option value="">Which service are you interested in?</option>
+                        <option value="teacher-training">Teacher Training & Professional Development</option>
+                        <option value="publishing">ELT Publishing & Editorial Services</option>
+                        <option value="edtech">AI EdTech Solutions</option>
+                        <option value="other">Other / Not Sure Yet</option>
+                    </select>
+                    <textarea name="message" placeholder="Tell me about your project or training needs..." rows="5" class="w-full p-5 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition duration-300 text-lg font-medium" required></textarea>
+                    <button type="submit" class="w-full py-5 bg-primary text-white rounded-2xl text-xl font-black hover:shadow-xl hover:scale-[1.02] transition duration-300">
+                        Request Consultation →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p class="text-lg mb-4">&copy; 2025 Bernardo Morales. All rights reserved. | ELT Teacher Training • Educational Publishing • AI EdTech Solutions</p>
+            <div class="flex justify-center space-x-8 text-lg">
+                <a href="https://www.linkedin.com/in/bernardomorales/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300 hover:scale-110 inline-block font-semibold">LinkedIn</a>
+                <a href="mailto:info@bernardomorales.com" class="hover:text-white transition duration-300 hover:scale-110 inline-block font-semibold">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Load and display books from CSV
+        async function loadBooks() {
+            try {
+                const response = await fetch('books_info.csv');
+                const csvText = await response.text();
+
+                console.log('CSV loaded successfully');
+
+                // Parse CSV with proper quote handling
+                function parseCSVLine(line) {
+                    const values = [];
+                    let currentValue = '';
+                    let insideQuotes = false;
+
+                    for (let i = 0; i < line.length; i++) {
+                        const char = line[i];
+
+                        if (char === '"') {
+                            insideQuotes = !insideQuotes;
+                        } else if (char === ',' && !insideQuotes) {
+                            values.push(currentValue.trim());
+                            currentValue = '';
+                        } else {
+                            currentValue += char;
+                        }
+                    }
+                    values.push(currentValue.trim());
+                    return values;
+                }
+
+                const lines = csvText.trim().split('\n');
+                const books = [];
+
+                for (let i = 1; i < lines.length; i++) {
+                    if (lines[i].trim() === '') continue;
+
+                    const values = parseCSVLine(lines[i]);
+
+                    if (values.length >= 4 && values[0]) {
+                        books.push({
+                            title: values[0],
+                            synopsis: values[1],
+                            cover: values[2],
+                            url: values[3]
+                        });
+                    }
+                }
+
+                console.log(`Parsed ${books.length} books`);
+
+                // Separate exam books from graded readers
+                const examBooks = books.filter(book => book.title.toLowerCase().includes('practise and pass'));
+                const gradedReaders = books.filter(book => !book.title.toLowerCase().includes('practise and pass'));
+
+                console.log(`Exam books: ${examBooks.length}, Graded readers: ${gradedReaders.length}`);
+
+                // Function to create book card HTML
+                function createBookCard(book, index, isLarge = false) {
+                    const sizeClasses = isLarge ? 'text-2xl' : 'text-lg';
+                    const synopsisClasses = isLarge ? 'text-base' : 'text-sm';
+                    const paddingClasses = isLarge ? 'p-6' : 'p-4';
+
+                    return `
+                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="${index * 50}">
+                        <a href="${book.url}" target="_blank" rel="noopener noreferrer" class="block">
+                            <div class="relative overflow-hidden rounded-2xl shadow-lg hover-lift bg-white">
+                                <div class="aspect-[3/4] overflow-hidden bg-gray-100">
+                                    <img src="${book.cover}" alt="${book.title}"
+                                         class="w-full h-full object-cover transition-opacity duration-300"
+                                         onload="console.log('Image loaded: ${book.title}')"
+                                         onerror="console.error('Failed to load image: ${book.cover}'); this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22%3E%3Crect fill=%22%230F172A%22 width=%22300%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 fill=%22%23F59E0B%22 font-size=%2220%22%3EBook Cover%3C/text%3E%3C/svg%3E'">
+                                </div>
+                                <div class="${paddingClasses}">
+                                    <h3 class="font-bold ${sizeClasses} text-dark-bg line-clamp-2 group-hover:text-primary transition-colors">
+                                        ${book.title}
+                                    </h3>
+                                    ${book.synopsis ? `
+                                        <p class="${synopsisClasses} text-gray-600 mt-2 line-clamp-3">
+                                            ${book.synopsis}
+                                        </p>
+                                    ` : ''}
+                                </div>
+                                <div class="absolute top-3 right-3 w-8 h-8 bg-secondary rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                                    <i data-lucide="external-link" class="w-4 h-4 text-white"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    `;
+                }
+
+                // Display exam books (larger)
+                const examContainer = document.getElementById('exam-books-container');
+                examContainer.innerHTML = examBooks.map((book, index) => createBookCard(book, index, true)).join('');
+
+                // Display graded readers
+                const readersContainer = document.getElementById('readers-container');
+                readersContainer.innerHTML = gradedReaders.map((book, index) => createBookCard(book, index, false)).join('');
+
+                console.log('Books rendered to page');
+
+                // Reinitialize Lucide icons for the new elements
+                lucide.createIcons();
+
+            } catch (error) {
+                console.error('Error loading books:', error);
+                const examContainer = document.getElementById('exam-books-container');
+                const readersContainer = document.getElementById('readers-container');
+                if (examContainer) examContainer.innerHTML = `
+                    <div class="col-span-full text-center text-gray-600">
+                        <p>Unable to load exam materials at this time.</p>
+                    </div>
+                `;
+                if (readersContainer) readersContainer.innerHTML = `
+                    <div class="col-span-full text-center text-gray-600">
+                        <p>Unable to load graded readers at this time.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Load books when page is ready
+        document.addEventListener('DOMContentLoaded', loadBooks);
+    </script>
+
+</body>
+</html>

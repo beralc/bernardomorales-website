@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bernardomorales.com/sitemap.xml

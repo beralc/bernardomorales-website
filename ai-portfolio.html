@@ -173,11 +173,11 @@
                                 </li>
                                 <li class="flex items-center gap-3 text-gray-200">
                                     <i data-lucide="settings-2" class="w-5 h-5 text-secondary flex-shrink-0"></i>
-                                    Customisable accent, pace, and topic selection
+                                    Choice of tutor voice and conversation topic
                                 </li>
                                 <li class="flex items-center gap-3 text-gray-200">
                                     <i data-lucide="users" class="w-5 h-5 text-secondary flex-shrink-0"></i>
-                                    Currently in beta with Madrid-area research participants
+                                    Pilot study with 35 adult learners, approved by the UCM Research Ethics Committee
                                 </li>
                             </ul>
                             <div class="flex flex-wrap gap-4">
@@ -203,8 +203,8 @@
                                             <i data-lucide="mic" class="w-3.5 h-3.5 text-secondary"></i>
                                         </div>
                                         <div>
-                                            <p class="text-sm font-bold text-white mb-0.5">Speech recognition</p>
-                                            <p class="text-xs text-gray-400 leading-relaxed">The learner speaks; the app transcribes their words in real time using automatic speech-to-text.</p>
+                                            <p class="text-sm font-bold text-white mb-0.5">Real-time voice</p>
+                                            <p class="text-xs text-gray-400 leading-relaxed">The learner talks to the tutor by voice through OpenAI's Realtime API, with no typing needed.</p>
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-3">
@@ -212,8 +212,8 @@
                                             <i data-lucide="cpu" class="w-3.5 h-3.5 text-primary"></i>
                                         </div>
                                         <div>
-                                            <p class="text-sm font-bold text-white mb-0.5">Large language model</p>
-                                            <p class="text-xs text-gray-400 leading-relaxed">An LLM acts as a conversational tutor - understanding the learner's input, correcting errors gently, and generating natural responses.</p>
+                                            <p class="text-sm font-bold text-white mb-0.5">Conversational tutor</p>
+                                            <p class="text-xs text-gray-400 leading-relaxed">The model acts as a patient conversation partner, with prompts based on second language acquisition research, and corrects errors gently.</p>
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-3">
@@ -221,8 +221,8 @@
                                             <i data-lucide="volume-2" class="w-3.5 h-3.5 text-amber-400"></i>
                                         </div>
                                         <div>
-                                            <p class="text-sm font-bold text-white mb-0.5">Text-to-speech</p>
-                                            <p class="text-xs text-gray-400 leading-relaxed">Responses are read aloud in the learner's chosen accent, keeping the interaction fully spoken.</p>
+                                            <p class="text-sm font-bold text-white mb-0.5">Transcripts</p>
+                                            <p class="text-xs text-gray-400 leading-relaxed">Whisper transcribes every session, so learners can review what they said.</p>
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-3">
@@ -231,7 +231,7 @@
                                         </div>
                                         <div>
                                             <p class="text-sm font-bold text-white mb-0.5">CEFR assessment layer</p>
-                                            <p class="text-xs text-gray-400 leading-relaxed">Each session is mapped against CEFR can-do statements, tracking progress across sessions in a PostgreSQL database.</p>
+                                            <p class="text-xs text-gray-400 leading-relaxed">After each session, GPT-4o-mini maps the transcript to CEFR can-do descriptors. Progress is stored in Supabase (PostgreSQL).</p>
                                         </div>
                                     </li>
                                 </ul>

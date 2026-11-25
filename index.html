@@ -221,13 +221,12 @@
                     <p class="text-gray-700 mb-5"><strong>Goal.</strong> Give adults over 50 a way to practise speaking English with an AI tutor, at any time, from their phone or computer.</p>
                     <p class="text-gray-700 mb-2"><strong>How it works.</strong></p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-700 mb-5">
-                        <li>The learner speaks, and speech-to-text transcribes it in real time.</li>
-                        <li>A large language model acts as a conversation partner and gives gentle corrections.</li>
-                        <li>Text-to-speech answers in the accent and pace the learner chooses.</li>
-                        <li>Each session is mapped to CEFR can-do statements, and progress is stored in PostgreSQL.</li>
+                        <li>The learner talks to the tutor by voice, in real time, through OpenAI's Realtime API. Whisper keeps a transcript of the conversation.</li>
+                        <li>After each session, GPT-4o-mini checks the transcript against CEFR Companion Volume can-do descriptors for speaking and gives the learner feedback.</li>
+                        <li>Progress, sessions and transcripts are stored in Supabase (PostgreSQL).</li>
                     </ul>
-                    <!-- TODO(Bernardo): add his role (designed and built it himself?), launch date and the named STT / LLM / TTS services. -->
-                    <p class="text-gray-700 mb-6"><strong>Status.</strong> Pilot study with 35 adult learners, approved by the UCM Research Ethics Committee in 2026. Results will follow when the study ends.</p>
+                    <p class="text-gray-700 mb-5"><strong>My role.</strong> I designed and built it, from the React front end to the Flask back end, starting in October 2025.</p>
+                                        <p class="text-gray-700 mb-6"><strong>Status.</strong> Pilot study with 35 adult learners, approved by the UCM Research Ethics Committee in 2026. Results will follow when the study ends.</p>
                     <div class="flex flex-wrap gap-3 mt-auto">
                         <a href="https://englishhelper.bernardomorales.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-primary text-white rounded-xl font-bold hover:bg-blue-900 transition-colors">
                             Open the app <i data-lucide="external-link" class="w-4 h-4"></i>

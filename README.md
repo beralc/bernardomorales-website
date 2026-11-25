@@ -2,7 +2,7 @@
 
 Personal site of Bernardo Morales: Product Manager, AI in Education, Assessment & Learning Platforms.
 
-Static HTML with Tailwind CSS and Lucide icons loaded from CDNs. No build step. Deployed on Vercel from `main`.
+Static HTML with Tailwind CSS and Lucide icons loaded from CDNs. No build step. Deployed on Vercel from `master`.
 
 - `index.html`: profile, selected work, experience, credentials, publications, contact.
 - `ai-portfolio.html`: English Helper and the interactive teaching resources.
